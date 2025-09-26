@@ -1,0 +1,213 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fdfbf7;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #a67c52;
+}
+
+/* ===== Header / Hero ===== */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('images/hero.jpeg') center/cover no-repeat;
+  color: white;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* ===== Articles Section ===== */
+.articles-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.article-card {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.photo-credit {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 5px 15px;
+}
+
+.photo-credit a {
+  color: #777;
+}
+
+.article-card h3 {
+  font-size: 1.1rem;
+  margin: 15px;
+}
+
+.article-card p {
+  font-size: 0.9rem;
+  margin: 0 15px 15px;
+}
+
+.article-card a {
+  display: inline-block;
+  margin: 0 15px 20px;
+  font-weight: bold;
+  color: #a67c52;
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Newsletter ===== */
+#newsletter {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#newsletter input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  background: #a67c52;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#newsletter button:hover {
+  opacity: 0.9;
+}
+
+/* ===== Contact ===== */
+#contact {
+  padding: 60px 20px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#contact button {
+  padding: 10px 20px;
+  background: #a67c52;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* ===== About Page ===== */
+#about-hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+}
+
+#about-hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#about-hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+#founder-note {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#founder-note h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#founder-note p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .article-card {
+    flex: 0 0 80%;
+  }
+}
